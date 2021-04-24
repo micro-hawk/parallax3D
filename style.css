@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+#parallax {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+
+#parallax #text {
+    color: #094b65;
+    position: absolute;
+    font-size: 10vw;
+    text-align: center;
+    line-height: 4.3rem;
+    font-family: 'Rancho',cursive;
+    transform: translateY(-50%);
+
+}
+#parallax #text span {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+#btn {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Poppins';
+    font-weight : 900;
+    display: inline-block;
+
+    border-radius: 40px;
+    padding: 8px 30px;
+    background-color: #ff0;
+    color: #094b65;
+    transform: translateY(100px);
+}
