@@ -6,9 +6,17 @@ let rocks = document.getElementById('rocks');
 let forest = document.getElementById('forest');
 let water = document.getElementById('water');
 
-function scrollingEffect () {
+window.addEventListener('scroll', function(){
     let value = window.scrollY;
-    text.style.top = 50 + value * -0.5 + '%';
-}
+    text.style.top = 40 + value * -0.5 + '%';
+    bird1.style.top = value * -1.5 + 'px';
+    bird1.style.left = value * 2 + 'px';
 
-window.addEventListener('scroll', scrollingEffect());
+    bird2.style.top = value * -1.5 + 'px';
+    bird2.style.left = value * -5 + 'px';
+
+    btn.style.marginTop = value * 1.7 + 'px'; 
+    rocks.style.top = value * 0.12 + 'px' ;
+    forest.style.top = value * 0.25 +'px';
+    // water.style.left = value * 0.25 + 'px';
+});

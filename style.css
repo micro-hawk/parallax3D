@@ -1,24 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
+
+body {
+    margin: 0;
+}
 #parallax {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    overflow-x: hidden;
-    min-height: 100vh;
+    overflow: hidden;
+    height: 100vh;
     /* background-color: #fff; */
     width: 100%;
-}
-
+    }
 #parallax::before {
     content: '';
     left: 0;
     bottom: 0;
     width: 100%;
     height: 100px;
-    position: absolute;
+    position: absolute; 
     background: linear-gradient(to top, #094b65, transparent);
     z-index: 10;
 }
@@ -64,19 +67,34 @@
     pointer-events: none;
 }
 
-
-.sec {
-    position: relative;
-    padding: 100px;
+#parallax-scrolling  .scrolling-para {
+    /* margin: 10rem; */
     background-color: #094b65;
+    color: white;
+    padding: 1rem 10rem;
 }
-.sec h2 {
+
+#parallax-scrolling {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* overflow: hidden; */
+    /* height: 100vh; */
+    /* background-color: #fff; */
+    width: 100%;
+    /* padding: 10rem; */
+    }
+#parallax-scrolling::before {
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    position: absolute; 
+}
+
+
+#parallax-scrolling  .scrolling-para h2 {
     font-size: 3rem;
-   color: white;
-   margin-bottom: 5rem;
-}
-.sec p {
-    font-size: 1rem;
-   color: white;
-   margin-bottom: 5rem;
 }
